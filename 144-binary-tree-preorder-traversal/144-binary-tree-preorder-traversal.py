@@ -11,7 +11,7 @@ class Solution:
         
         
         ans=[]
-        def printPreorder(root):
+        def Preorder(root):
 
             if root:
 
@@ -19,10 +19,10 @@ class Solution:
                 ans.append(root.val)
 
 
-                printPreorder(root.left)
+                Preorder(root.left)
 
 
-                printPreorder(root.right)
+                Preorder(root.right)
                 
-        printPreorder(root)
+        Preorder(root)
         return ans
