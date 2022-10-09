@@ -15,8 +15,13 @@ class Solution:
             bfs(root.left,ans)
             bfs(root.right,ans)
         bfs(temp,arr)
+        # ss={}
         for i in range(len(arr)):
-            x=k-arr[i] 
+            x=k-arr[i]
+        #     ss[i]=k-arr[i] 
+        # for i in ss:
+        #     # if ss[i] in ss:
+        #     #     return True
             if x in arr:
                 for j in range(len(arr)):
                     if x==arr[j] and j!=i:
