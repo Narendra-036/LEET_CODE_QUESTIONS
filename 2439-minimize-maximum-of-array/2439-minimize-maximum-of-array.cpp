@@ -6,7 +6,7 @@ public:
         for(int i=0; i<n; ++i) nums[i] = a[i];
         long long sum = 0;
         for(auto c: nums) sum+=c;
-        long long l=ceil((double)sum/n), r=1e9+4, m;
+        long long l=ceil((double)sum/n), r=*max_element(a.begin(),a.end()), m;
         vector<long long> temp = nums;
         long long ans = 1e9;
         while(l<=r){
