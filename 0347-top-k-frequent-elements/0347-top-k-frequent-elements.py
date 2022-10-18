@@ -16,9 +16,11 @@ class Solution:
                 x[d[i]].append(i)
             else:
                 x[d[i]]=[i]
+        print("x",x)
         
         ans=[]
         for i in reversed(sorted(x.keys())):
-            ans.extend(x[i][::-1])
+            print(i,x[i])
+            ans.extend(x[i][::-1])    #{"i","love"}
         
         return ans[:k]
