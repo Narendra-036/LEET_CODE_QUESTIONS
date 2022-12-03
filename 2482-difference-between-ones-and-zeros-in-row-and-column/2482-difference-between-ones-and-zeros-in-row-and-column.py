@@ -10,23 +10,14 @@ class Solution:
         y=[]
         for i in range(len(grid)):
             y.append(sum(grid[i]))
-        
         a=len(grid)
         b=len(grid[0])
-        
-        dif=[]
-        
-        for i in range(len(grid)):
+        grid=[]
+        for i in range(a):
             z=[]
-            for j in range(len(grid[0])):
-                
-                # oro=sum(grid[i])
-                # zr=len(grid[i])-oro
-                # oc=x[j]
-                # zc=len(grid)-oc
-                # # print(oro,oc,zr,zc)
+            for j in range(b):
                 z.append(x[j]+y[i]-a+x[j]-b+y[i])
-            dif.append(z)
-        return dif
+            grid.append(z)
+        return grid
         
         
