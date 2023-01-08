@@ -8,7 +8,6 @@ class Solution:
         while nums and k>1:
             ans=max(ans,nums.pop(0))
             k-=1
-    
         if k==1 and len(nums)>1:
             return max(ans,nums[1])
         elif k==1:
