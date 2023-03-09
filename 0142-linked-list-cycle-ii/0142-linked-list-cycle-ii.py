@@ -10,7 +10,6 @@ class Solution:
         x=[]
         while temp:
             if temp in x:
-                
                 return temp
             x.append(temp)
             temp=temp.next
