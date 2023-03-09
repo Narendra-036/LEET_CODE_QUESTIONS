@@ -10,9 +10,8 @@ class Solution:
         x=[]
         while temp:
             if temp in x:
-                for i in range(len(x)):
-                    if temp==x[i]:
-                        return x[i]
+                
+                return temp
             x.append(temp)
             temp=temp.next
         return None
