@@ -1,21 +1,20 @@
 class Solution:
-    def myAtoi(self, s: str) -> int:
-        ans=[]
-        for i in s:
-            if (ord(i)==45 or ord(i)==43)  and not ans:
-                ans.append(i)
+    def myAtoi(self, ks: str) -> int:
+        s=""
+        for i in ks:
+            if (ord(i)==45 or ord(i)==43)  and len(s)==0:
+                # ans.append(i)
+                s+=i
             elif ord(i)>=48 and ord(i)<=57:
-                ans.append(i)
-            elif ord(i)==32 and not ans:
+                # ans.append(i)
+                s+=i
+            elif ord(i)==32 and len(s)==0:
                 continue
-            elif ord(i)==32 and ans:
+            elif ord(i)==32 and len(s)!=0:
                 break
             else:
                 break
     
-        s=""
-        s="".join(ans)
-        print(s)
         if len(s)==0:
             return 0
         if len(s)==1 and (s[0]=="+" or s[0]=="-"):
