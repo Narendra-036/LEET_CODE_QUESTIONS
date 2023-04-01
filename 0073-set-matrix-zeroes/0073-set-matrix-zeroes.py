@@ -8,7 +8,6 @@ class Solution:
             for j in range(len(matrix[0])):
                 if matrix[i][j]==0:
                     x.append([i,j])
-        print(x)
         for i in x:
             first=i[0]
             second=i[1]
