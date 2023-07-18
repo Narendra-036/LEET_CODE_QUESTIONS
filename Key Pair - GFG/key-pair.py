@@ -6,12 +6,8 @@ class Solution:
 	    for i in arr:
 	        if i not in d:
 	            d[x-i]=1
-	            continue
-	           # print(i,d)
 	        else:
-	           
 	            return 1
-	            
 	    return 0
 		# code here
 
